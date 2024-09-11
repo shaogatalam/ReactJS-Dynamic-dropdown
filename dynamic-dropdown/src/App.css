@@ -1,0 +1,97 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 20vw;
+}
+
+.dropdown input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  max-height: 400px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 10000;
+}
+
+.dropdown-list li {
+  padding: 4px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background: #eee;
+}
+
+
+.pagination button:disabled {
+  background: #ddd;
+}
+
+.selected-item-list{
+  border: 1px dashed lightgray;
+  border-bottom: 0px;
+  display:flex;
+  flex-wrap:wrap;
+  white-space:nowrap;
+}
+
+.selected-item{
+  margin:3px;
+  border-bottom: 0.1px dashed;
+  font-size:11px;
+  font-weight : bolder;
+}
+
+.paginationBar{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background: ghostwhite;
+  position: sticky; 
+  top: 0; 
+  z-index: 999; 
+}
+
+.listItem{
+  cursor: pointer; 
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.deselectAllButton{
+  cursor:pointer;
+  background:white;
+  border-left: 0px;
+}
+
+
+.NextPageButton{
+  height: 28px; 
+  width: 30px;
+  transform: rotate(180deg);
+}
+
+.PrevPageButton{
+  height: 28px; 
+  width: 30px;
+}
+
+.searchField{
+  border-right: 0px;
+  outline:none;
+}
